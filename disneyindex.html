@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney & Disney+ Search</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      font-family: 'Caveat', cursive; /* Use Caveat font */
+      font-size: 48px;
+      color: #ff69b4; /* Bright pink for the heading */
+    }
+    .message {
+      font-size: 18px;
+      color: #89CFF0; /* Baby blue for the main message */
+      margin-bottom: 20px;
+    }
+    .highlight {
+      color: red; /* Bright red for the Globe & Mail text */
+      font-weight: bold;
+    }
+    img {
+      margin: 20px auto;
+      max-width: 300px; /* Adjust width as needed */
+      height: auto;
+      border-radius: 8px; /* Optional: Add rounded corners */
+      display: block;
+    }
+    button {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 25px;
+      background-color: white; /* White buttons */
+      color: black; /* Black text on buttons */
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: red; /* Red for hover effect */
+      color: white; /* White text on hover */
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #89CFF0; /* Baby blue for footer text */
+    }
+  </style>
+</head>
+<body>
+  <h1>Disney & Disney+ Search</h1>
+  <div class="message">
+    Good evening, Flex!<br><br>
+    Please be sure to toggle over to "most recent" with the 
+    <span class="highlight">Globe & Mail</span> results.
+  </div>
+  <img src="DisneyToggle.jpg" alt="Instructions for toggling to most recent" />
+  <button onclick="openLink('https://www.theglobeandmail.com/search/?q=disney%2B')">Disney+ // Globe & Mail</button>
+  <button onclick="openLink('https://www.theglobeandmail.com/search/?q=disney')">Disney // Globe & Mail</button>
+  <button onclick="openLink('https://www.ledevoir.com/recherche?tri=date_desc&section_id=&expression=disney%2B&tri_widget=date_desc&tri_widget=date_desc&date=depuis_1998&format=tous&section=&date_debut=&date_fin=&section=&collaborateur_nom=')">Disney+ // Le Devoir</button>
+  <button onclick="openLink('https://www.ledevoir.com/recherche?tri=date_desc&section_id=&expression=disney&tri_widget=date_desc&tri_widget=date_desc&date=depuis_1998&format=tous&section=&date_debut=&date_fin=&section=&collaborateur_nom=')">Disney // Le Devoir</button>
+  <div class="footer">
+    Thanks for covering for me.<br>
+    (｡◕‿‿◕｡) -berlin
+  </div>
+  <script>
+    function openLink(url) {
+      window.open(url, '_blank'); // Opens the link in a new tab
+    }
+  </script>
+</body>
+</html>
